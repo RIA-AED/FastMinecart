@@ -1,0 +1,4 @@
+name: FastMinecart
+version: '${project.version}'
+main: ink.magma.fastminecart.FastMinecart
+api-version: '1.20'
