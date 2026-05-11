@@ -3,5 +3,6 @@ version: '2.0.0'
 main: ink.magma.fastminecart.FastMinecart
 api-version: '1.21'
 libraries:
-  - com.github.Revxrsal.Lamp:common:3.3.6
-  - com.github.Revxrsal.Lamp:bukkit:3.3.6
+  - io.github.revxrsal:lamp.common:4.0.0-rc.12
+  - io.github.revxrsal:lamp.bukkit:4.0.0-rc.12
+  - io.github.revxrsal:lamp.brigadier:4.0.0-rc.12

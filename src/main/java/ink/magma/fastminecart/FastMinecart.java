@@ -3,7 +3,9 @@ package ink.magma.fastminecart;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-import revxrsal.commands.bukkit.BukkitCommandHandler;
+import revxrsal.commands.Lamp;
+import revxrsal.commands.bukkit.BukkitLamp;
+import revxrsal.commands.bukkit.actor.BukkitCommandActor;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -27,10 +29,8 @@ public final class FastMinecart extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(new VehicleEventListener(), this);
 
         // commands
-        BukkitCommandHandler handler = BukkitCommandHandler.create(this);
-        handler.enableAdventure();
-        handler.register(new MainCommand());
-        handler.registerBrigadier();
+        Lamp<BukkitCommandActor> lamp = BukkitLamp.builder(this).build();
+        lamp.register(new MainCommand());
 
         getLogger().info("插件已正常载入.");
     }

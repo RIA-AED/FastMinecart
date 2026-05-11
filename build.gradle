@@ -23,8 +23,9 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
 
-    implementation "com.github.Revxrsal.Lamp:common:3.3.6"
-    implementation "com.github.Revxrsal.Lamp:bukkit:3.3.6"
+    implementation 'io.github.revxrsal:lamp.common:4.0.0-rc.12'
+    implementation 'io.github.revxrsal:lamp.bukkit:4.0.0-rc.12'
+    implementation 'io.github.revxrsal:lamp.brigadier:4.0.0-rc.12'
 }
 
 tasks {
@@ -61,4 +62,9 @@ processResources {
     filesMatching('plugin.yml') {
         expand props
     }
+}
+
+compileJava {
+    // Preserve parameter names in the bytecode
+    options.compilerArgs += ["-parameters"]
 }
