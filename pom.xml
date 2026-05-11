@@ -6,7 +6,7 @@
 
     <groupId>ink.magma</groupId>
     <artifactId>FastMinecart</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <packaging>jar</packaging>
 
     <name>FastMinecart</name>
@@ -84,14 +84,14 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.Revxrsal.Lamp</groupId>
-            <artifactId>common</artifactId>
-            <version>3.1.9</version>
+            <groupId>io.github.revxrsal</groupId>
+            <artifactId>lamp.common</artifactId>
+            <version>4.0.0-rc.6</version>
         </dependency>
         <dependency>
-            <groupId>com.github.Revxrsal.Lamp</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>3.1.9</version>
+            <groupId>io.github.revxrsal</groupId>
+            <artifactId>lamp.bukkit</artifactId>
+            <version>4.0.0-rc.6</version>
         </dependency>
     </dependencies>
 </project>
