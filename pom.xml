@@ -86,12 +86,12 @@
         <dependency>
             <groupId>io.github.revxrsal</groupId>
             <artifactId>lamp.common</artifactId>
-            <version>4.0.0-rc.6</version>
+            <version>4.0.0-rc.17</version>
         </dependency>
         <dependency>
             <groupId>io.github.revxrsal</groupId>
             <artifactId>lamp.bukkit</artifactId>
-            <version>4.0.0-rc.6</version>
+            <version>4.0.0-rc.17</version>
         </dependency>
     </dependencies>
 </project>
